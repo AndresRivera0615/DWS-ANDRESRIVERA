@@ -187,4 +187,12 @@ body{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  div.ex3 {
+   
+    height: 50%;
+    width: 90%;  
+    overflow-y: auto;
+    float: right;
+  }
+  
 }
