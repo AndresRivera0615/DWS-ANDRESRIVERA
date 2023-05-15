@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="./Grid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!--------BOOSTRAP------------------------------>
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--------BOOSTRAP------------------------------>
+</head>
+
+<body>
+
+    <header class="hero">
+        
+                <!--img src="./Images/Logo.png" style="height: 100%; width: 100%;" alt="logo"-->
+           
+        <nav class="nav container" id="nav">
+            <h2 class="nav__logo"> </h2>
+<center>
+            <ul class="nav__links">
+
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./tema.html" class="nav__link">Tema</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Nosotros</a>
+                </li>
+                
+
+            </ul>
+        </center>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="#" class="nav__icon">
+            </a>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="./audio.html">Audios</a>
+            <a href="#">Nosotros</a>
+        </div>
+          
+          
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+
+
+<div class="ex3">
+ <center><h1>Cuestionario de Css Grid</h1></center>
+     <!--Preguntas-->
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <p><strong>1. Css Grid es un modelo de..  </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta1" id="p11"> Diseño css que permite crear paginas </li>
+                        <li><input type="radio" name="pregunta1" id="p12"> Gestionar imagenes por cuadriculas</li>
+                        <li><input type="radio" name="pregunta1" id="p13"> Poner mas bonita una pagina web</li>
+                        <li><input type="radio" name="pregunta1" id="p14"> Crear elementos de paginas web</li>
+                    </ol>
+                    <p><strong>2.CSS Grid divide la página en una cuadrícula o rejilla (grid) el cual usa tanto filas como columnas a la vez.</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta2" id="p22"> Falso</li>
+                        <li><input type="radio" name="pregunta2" id="p24"> Verdadero</li>
+                    </ol>
+                    <p><strong>3. Cual es el primer atributo para trabajar con Css Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta3" id="p31"> Grid element en una etiqueta</li>
+                        <li><input type="radio" name="pregunta3" id="p33"> Display: grid en un contenedor</li>
+                        <li><input type="radio" name="pregunta3" id="p32"> justify-content en un container/li>
+                        <li><input type="radio" name="pregunta3" id="p34"> Background GRID</li>
+                    </ol>
+                    <p><strong>4. Como funciona CSS Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta4" id="p41"> Dividir las secciones principales de una web en cuadrículas (filas y columnas)</li>
+                        <li><input type="radio" name="pregunta4" id="p42"> Ajusta imagenes en la posición que queramos</li>
+                        <li><input type="radio" name="pregunta4" id="p43"> Modificar una pagina web</li>
+                        <li><input type="radio" name="pregunta4" id="p44"> Cambiar el tamaño de los elementos de la web</li>
+                    </ol>
+                    <p><strong>5. Cual de las siguientes respuestas es una caracteristica de Css Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta5" id="p55"> Colocar los elementos en cualquier ubicación exacta de la cuadrícula</li>
+                        <li><input type="radio" name="pregunta5" id="p51"> Contralar la alineación, tanto de elementos, como de toda la cuadrícula</li>
+                        <li><input type="radio" name="pregunta5" id="p52"> Todas las anteriores</li>
+                        <li><input type="radio" name="pregunta5" id="p53"> Cambiar los elementos de la cuadrícula de sitio en cualquier momento de manera sencilla </li>
+                    </ol>
+                    <p><strong>6. Que es un area en Css Grid </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta6" id="p61"> Es una o más grid cells (en-US) que forman un área rectangular en la cuadrícula</li>
+                        <li><input type="radio" name="pregunta6" id="p62"> Es el espacio que ocupa un elemento en la web</li>
+                        <li><input type="radio" name="pregunta6" id="p66"> Es la zona de la pantalla</li>
+                        <li><input type="radio" name="pregunta6" id="p64"> Son cuadros a al azar colocados en la web</li>
+                    </ol>
+                    <p><strong>7. Cuando implemento por primera vez microsoft Css Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta7" id="p71"> 1999 </li>
+                        <li><input type="radio" name="pregunta7" id="p77"> 2003</li>
+                        <li><input type="radio" name="pregunta7" id="p73"> 2012</li>
+                        <li><input type="radio" name="pregunta7" id="p74"> 2002</li>
+                    </ol>
+                    <p><strong>8. Quien o que organización creó css Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta8" id="p88"> microsoft</li>
+                        <li><input type="radio" name="pregunta8" id="p82"> Amazon</li>
+                        <li><input type="radio" name="pregunta8" id="p83"> Apple</li>
+                        <li><input type="radio" name="pregunta8" id="p84"> Steve Jobs</li>
+                    </ol>
+                    <p><strong>9. Qué navegadores soportan Css Grid</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta9" id="p91"> Todos los anteriores</li>
+                        <li><input type="radio" name="pregunta9" id="p92"> Chrome</li>
+                        <li><input type="radio" name="pregunta9" id="p93"> Firefox</li>
+                        <li><input type="radio" name="pregunta9" id="p99"> Safari</li>
+                    </ol>
+                    <p><strong>10. Como se llama el director del curso(Pregunta extra)</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta10" id="p01"> Mario Luiz Avila</li>
+                        <li><input type="radio" name="pregunta10" id="p02"> Carlos Andres Perez</li>
+                        <li><input type="radio" name="pregunta10" id="p03"> Pedro Leonel Ramirez</li>
+                        <li><input type="radio" name="pregunta10" id="p04"> Antinio Montero</li>
+                    </ol>
+                    <hr />
+                    <button type="button" class="btn btn-primary" onclick="resultado()">RESULTADO</button>
+                    <hr />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!--Llamada al script de respuestas-->
+    <script src="respuestas.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
+    </div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+
+    <footer>
+        <p>Autor: Andres Felipe Rivera<br>
+            <p>Programa: Diseño web<br>
+                <p>Todos los derechos reservados<br>
+                    <p>UNAD 2023<br>
+      </footer>
+ 
+
+</body>
+
+</html>
